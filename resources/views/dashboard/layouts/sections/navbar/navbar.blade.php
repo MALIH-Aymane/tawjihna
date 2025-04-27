@@ -19,7 +19,7 @@ $navbarDetached = ($navbarDetached ?? '');
         <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
           <a href="{{url('/')}}" class="app-brand-link">
             <span class="app-brand-logo demo">@include('dashboard/_partials.macros',["height"=>20])</span>
-            <span class="app-brand-text demo menu-text fw-bold">{{config('variables.templateName')}}</span>
+            <span class="app-brand-text demo menu-text fw-bold">Tawjihna</span>
           </a>
         </div>
       @endif
