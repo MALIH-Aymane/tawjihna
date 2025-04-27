@@ -72,7 +72,7 @@ $configData = Helper::appClasses();
 
         {{-- submenu --}}
         @isset($menu->submenu)
-          @include('layouts.sections.menu.submenu',['menu' => $menu->submenu])
+          @include('dashboard.layouts.sections.menu.submenu',['menu' => $menu->submenu])
         @endisset
       </li>
       @endif
