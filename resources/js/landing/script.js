@@ -1,3 +1,4 @@
+import GLightbox from 'glightbox';
 
 /************** Menu Js**************/
 
@@ -139,6 +140,7 @@ function topFunction() {
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
+window.topFunction = topFunction;
 
 
 
