@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+
 @section('content')
 
        <!-- Pre-loader -->
@@ -16,7 +17,7 @@
             <!-- LOGO -->
             <a class="navbar-brand logo text-uppercase" href="index-5.html">
                 <img src="{{ asset('light-tawjihna.svg') }}" class="logo-light" alt="logo-light" height="35">
-                <img src="images/logo-dark.png" class="logo-dark" alt="logo-dark" height="22">
+                <img src="{{ asset('light-tawjihna.svg') }}" class="logo-dark" alt="logo-dark" height="34">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,28 +26,21 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ms-auto navbar-center">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#service" class="nav-link">Service</a>
+                        <a href="#service" class="nav-link">A propos de nous?</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#process" class="nav-link">Process</a>
+                        <a href="#blog" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#testimonial" class="nav-link">Testimonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#pricing" class="nav-link">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#contact" class="contact-btn ">
+                            <span>Twasl m3ana</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#000000">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.652a11.882 11.882 0 005.647 1.427h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.476-8.414z"/>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -64,11 +58,10 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="me-4">
-                            <h6 class="sub-title mb-3">zoric Template</h6>
-                            <h1 class="mb-4">Leading Digital Business For <span class="text-primary">Software</span>  Solution</h1>
-                            <p class="text-muted fs-17">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
+                            <h1 class="mb-4">Renforcez votre avenir  <span class="text-primary">TAWJIH M3ANA </span></h1>
+                            <p class="text-muted fs-17">Découvrez nos services complets et découvrez comment nous pouvons vous aider à atteindre vos objectifs..</p>
                             <div class="mt-4">
-                                <a href="#" class="btn btn-primary mt-2">Discover More</a>
+                                <a href="#" class="btn btn-primary mt-2">En savoir plus</a>
                                 <a class="btn btn-primary ms-sm-1 image-popup mt-2" href="https://www.w3schools.com/html/mov_bbb.mp4"><svg width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video icons"><g><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></g></svg> Watch Now</a>
                             </div>
                         </div>
@@ -76,8 +69,8 @@
                     <div class="col-lg-5 ms-auto">
                         <div class="subscribe-form box-shadow mt-4 mt-lg-0">
                             <div class="text-center mb-4 pb-2">
-                                <p class="text-muted text-uppercase mb-2">Welcome to zoric</p>
-                                <h5>Get 30 Days Free Trial</h5>
+                                <p class="text-muted text-uppercase mb-2">TSAJAL M3ANA</p>
+                                <h5>tsajal w twasel b latest news</h5>
                             </div>
                             <form action="#">
                                 <div class="mb-4 position-relative">
@@ -92,12 +85,8 @@
                                     <label for="exampleFormControlInput3" class="form-label">Number*</label>
                                     <input type="number" class="form-control" id="exampleFormControlInput3" placeholder="Enter your number">
                                 </div>
-                                <div class="mb-3 position-relative">
-                                    <label for="exampleFormControlTextarea4" class="form-label">Message</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea4" rows="3" placeholder="Enter message"></textarea>
-                                  </div>
                                 <div class="pt-2">
-                                    <button type="submit" class="btn btn-primary w-100">Get Started</button>
+                                    <button type="submit" class="btn btn-primary w-100">Envoyer</button>
                                 </div>
                             </form>
                         </div>
@@ -175,35 +164,6 @@
                 </div>
                 <!--end col-->
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-box text-center mt-4 box-shadow">
-                        <img src="images/feature/img-04.png" alt="" class="img-fluid">
-                        <h5 class="fs-18 mt-4">Easy to customize</h5>
-                        <div class="lighlight-border mt-3"></div>
-                        <p class="text-muted mt-3 mb-0">The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
-                    </div>
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-box text-center mt-4">
-                        <img src="images/feature/img-05.png" alt="" class="img-fluid">
-                        <h5 class="fs-18 mt-4">Unrivaled Quality</h5>
-                        <div class="lighlight-border mt-3"></div>
-                        <p class="text-muted mt-3 mb-0">It is a long established fact that a reader will be distracted
-                            by the readable content of a page.</p>
-                    </div>
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-box text-center mt-4 box-shadow">
-                        <img src="images/feature/img-06.png" alt="" class="img-fluid">
-                        <h5 class="fs-18 mt-4">Online Marketing</h5>
-                        <div class="lighlight-border mt-3"></div>
-                        <p class="text-muted mt-3 mb-0">This is required when, for example, the is not yet available.
-                            Dummy text is also known as 'fill text'.</p>
-                    </div>
                 </div>
                 <!--end col-->
             </div>
@@ -213,138 +173,73 @@
     </section>
     <!-- END SERVICE -->
 
-    <!-- START About -->
-    <section class="section bg-light">
-        <div class="container">
-            <div class="row align-items-center g-3 g-lg-0">
-                <div class="col-lg-6">
-                    <div class="skill-box bg-white p-4 rounded box-shadow">
-                        <p class="text-uppercase mb-1">About Agency</p>
-                        <h3 class="mb-2">Leading Digital Agency for Business Solution.</h3>
-                        <p class="text-muted">When a good idea comes, you know, part of my job is to move it around,
-                            just see what people think, get people talking about it.</p>
-                        <div class="skills">
-                            <div class="mt-4">
-                                <p class="fw-bold mb-2">Web Design</p>
-                                <div class="progress">
-                                    <div class="progress-bar rounded" style="width:80%;">
-                                        <p class="progress-value fs-15 fw-bold">80%</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <p class="fw-bold mb-2">Development</p>
-                                <div class="progress">
-                                    <div class="progress-bar rounded" style="width:60%;">
-                                        <div class="progress-value fs-15 fw-bold">60%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <p class="fw-bold mb-2">Branding</p>
-                                <div class="progress">
-                                    <div class="progress-bar rounded" style="width:40%;">
-                                        <div class="progress-value fs-15 fw-bold">40%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <p class="fw-bold mb-2">Code</p>
-                                <div class="progress">
-                                    <div class="progress-bar rounded" style="width:75%;">
-                                        <div class="progress-value fs-15 fw-bold">75%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-                <div class="col-lg-6 about-img">
-                    <img src="images/about.jpg" class="img-fluid rounded box-shadow" alt="">
-                </div>
-                <!--end col-->
-            </div>
-            <!--end row-->
-        </div>
-        <!--end container-->
-    </section>
-    <!-- END About -->
-
-    <!-- START PROCESS -->
-    <section class="bg-process section" id="process">
+    <!-- START PRICING -->
+    <section class="section bg-light" id="pricing">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
-                    <div class="header-title text-center">
-                        <h3>Our Process</h3>
+                    <div class="header-title text-center mb-4">
+                        <p class="text-uppercase text-muted mb-2">Packs</p>
+                        <h3>Khtar Pack li mnasbek</h3>
                         <div class="title-border mt-3"></div>
-                        <p class="title-desc text-muted mt-3">We craft digital, graphic and dimensional thinking, to
-                            create category leading brand experiences that have meaning and add a value.</p>
+                        <p class="title-desc text-muted mt-3">Choisissez parmi différents packs d'inscription pour simplifier votre processus. 
+                            Paiement en ligne sécurisé et rapide..</p>
                     </div>
-                </div>
-                <!--end col-->
+                </div><!--end col-->
             </div>
             <!--end row-->
 
-            <div class="row mt-5 pt-2">
-                <div class="col-lg-3 col-md-6">
-                    <div class="process-box process-border text-center">
-                        <div class="process-count text-white mt-4">
-                            <h3 class="process-number">01</h3>
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-box bg-white box-shadow text-center p-5 mt-5 rounded">
+                        <p class="price-title mb-4 pb-3">Pack classic</p>
+                        <h1 class="mb-0 price">$Free</h1>
+                        <div class="pricing-features mt-4 pt-4">
+                            <p>POUR BAC : PC, SM, SVT,Lettre</p>
+                            <p>Nos informe l'abonné des nouveautés des concours d'accès aux écoles</p>
                         </div>
-
-                        <div class="process-content bg-light mt-5 rounded p-4">
-                            <h5 class="fs-18">Concept</h5>
-                            <p class="text-muted mb-0">It is a long established fact that a reader at its layout.</p>
+                        <div class="mt-5">
+                            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
                         </div>
-                    </div>
-                    <!--end process-box-->
+                    </div><!--end pricing-box-->
                 </div>
                 <!--end col-->
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="process-box process-border text-center">
-                        <div class="process-count text-white mt-4">
-                            <h3 class="process-number">02</h3>
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-box bg-white box-shadow text-center p-5 mt-5 rounded">
+                        <div class="pricing-label">
+                            <h5 class=" fs-16">Sale</h5>
                         </div>
 
-                        <div class="process-content bg-light mt-5 rounded p-4">
-                            <h5 class="fs-18">Plan</h5>
-                            <p class="text-muted mb-0">It is a long established fact that a reader at its layout.</p>
+                        <p class="price-title mb-4 pb-3">PACK SPECIAL</p>
+                        <h1 class="mb-0 price">300DH</h1>
+                        <div class="pricing-features mt-4 pt-4">
+                            <p>POUR BAC : PC, SM, SVT,Lettre</p>
+                            <p>Nos informe l'abonné des nouveautés des concours d'accès aux écoles</p>
+                            <p>On se charge des candidatures et leurs suivi à la place de l'abonné</p>
+                        </div>
+                        <div class="mt-5">
+                            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
                         </div>
                     </div>
-                    <!--end process-box-->
+                    <!--end pricing-box-->
                 </div>
                 <!--end col-->
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="process-box process-border text-center">
-                        <div class="process-count text-white mt-4">
-                            <h3 class="process-number">03</h3>
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-box bg-white box-shadow text-center p-5 mt-5 rounded">
+                        <p class="price-title mb-4 pb-3">Pack MN 3ndek</p>
+                        <h1 class="mb-0 price">100DH</h1>
+                        <div class="pricing-features mt-4 pt-4">
+                            <p>POUR BAC : PC, SM, SVT,Lettre</p>
+                            <p>On se charge des candidatures et leurs suivi à la place de l'abonné</p>                            </p>
+                            <p>Choose 10 inscriptions from your side</p>
                         </div>
-
-                        <div class="process-content bg-light mt-5 rounded p-4">
-                            <h5 class="fs-18">Design</h5>
-                            <p class="text-muted mb-0">It is a long established fact that a reader at its layout.</p>
-                        </div>
-                    </div>
-                    <!--end process-box-->
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="process-box text-center">
-                        <div class="process-count text-white mt-4">
-                            <h3 class="process-number">04</h3>
-                        </div>
-
-                        <div class="process-content bg-light mt-5 rounded p-4">
-                            <h5 class="fs-18">Development</h5>
-                            <p class="text-muted mb-0">It is a long established fact that a reader at its layout.</p>
+                        <div class="mt-5">
+                            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
                         </div>
                     </div>
-                    <!--end process-box-->
+                    <!--end pricing-box-->
                 </div>
                 <!--end col-->
             </div>
@@ -352,106 +247,7 @@
         </div>
         <!--end container-->
     </section>
-    <!-- END PROCESS -->
-
-    <!-- START COUNTER -->
-    <section class="section bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="counter-box">
-                        <h4>Our Achivements</h4>
-                        <p class="text-muted mt-2">You can combine all the zoric You can combine all the zoric templates
-                            into a single one, you can take a component from the Application theme and use it in the
-                            Website. It seems that only fragments of the original text remain in only fragments the Lorem Ipsum texts used today.</p>
-
-                        <div class="mt-4 mb-5">
-                            <div class="row" id="counter">
-
-                                <div class="col-md-6">
-                                    <div class="counter-box mt-4">
-                                        <div class="d-flex">
-                                            <div class="counter-icon">
-                                                <i class="mdi mdi-heart"></i>
-                                            </div>
-                                            <div class="flex-grow-1 ms-3">
-                                                <h4 class="counter_value" data-target="485">0</h4>
-                                                <p class="text-muted">Happy Clients</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--end counter-box-->
-                                </div>
-                                <!-- END COL -->
-
-                                <div class="col-md-6">
-                                    <div class="counter-box mt-4">
-                                        <div class="d-flex">
-                                            <div class="counter-icon">
-                                                <i class="mdi mdi-layers"></i>
-                                            </div>
-                                            <div class="flex-grow-1 ms-3">
-                                                <h4 class="counter_value" data-target="536">0</h4>
-                                                <p class="text-muted">Projects Completed</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--end counter-box-->
-                                </div>
-                                <!-- END COL -->
-                            </div>
-                            <!-- END ROW -->
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="counter-box mt-4">
-                                        <div class="d-flex">
-                                            <div class="counter-icon">
-                                                <i class="mdi mdi-cloud-download"></i>
-                                            </div>
-                                            <div class="flex-grow-1 ms-3">
-                                                <h4 class="counter_value" data-target="1652">0</h4>
-                                                <p class="text-muted mb-0">Files Downloaded</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--end counter-box-->
-                                </div>
-                                <!-- END COL -->
-                                <div class="col-md-6">
-                                    <div class="counter-box mt-4">
-                                        <div class="d-flex">
-                                            <div class="counter-icon">
-                                                <i class="mdi mdi-code-not-equal-variant"></i>
-                                            </div>
-                                            <div class="flex-grow-1 ms-3">
-                                                <h4 class="counter_value" data-target="14652">0</h4>
-                                                <p class="text-muted mb-0">Liens Of Code</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--end counter-box-->
-                                </div>
-                                <!-- END COL -->
-                            </div>
-                            <!-- END ROW -->
-                        </div>
-                    </div>
-                </div>
-                <!-- END COL -->
-
-                <div class="col-lg-6">
-                    <div class="img">
-                        <img src="images/achivements.jpg" class="img-fluid box-shadow-lg rounded" alt="">
-                    </div>
-                </div>
-                <!-- end col -->
-            </div>
-            <!--end row-->
-        </div>
-        <!--end container-->
-    </section>
-    <!-- END COUNTER -->
+    <!-- END PRICING -->
 
     <!-- START TESTIMONIAL -->
     <section class="section" id="testimonial">
@@ -459,11 +255,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="header-title text-center">
-                        <p class="text-uppercase text-muted mb-2">Testimonial</p>
+                        <p class="text-uppercase text-muted mb-2">What our clients Says</p>
                         <h3>Some lovely Feedback from our Clients</h3>
                         <div class="title-border mt-3"></div>
-                        <p class="title-desc text-muted mt-3">We craft digital, graphic and dimensional thinking, to
-                            create category leading brand experiences that have meaning and add a value.</p>
                     </div>
                 </div>
                 <!--end col-->
@@ -553,397 +347,7 @@
     </section>
     <!-- END TESTIMONIAL -->
 
-    <!-- START TEAM -->
-    <section class="section bg-light" id="team">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="header-title text-center">
-                        <p class="text-uppercase text-muted mb-2">meet our Expert</p>
-                        <h3>Amazing and talented People work here</h3>
-                        <div class="title-border mt-3"></div>
-                        <p class="title-desc text-muted mt-3">Porttitor dolor donec pulvinar tortor nisi quis dapibus
-                            tortor commodo sed Pellentesque hendrerit pellentesque libero nec sollicitudin.</p>
-                    </div>
-                </div>
-                <!-- END COL -->
-            </div>
-            <!-- END ROW -->
 
-            <div class="row mt-5">
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-box text-center">
-                        <div class="team-img position-relative">
-                            <img src="images/users/img-2.jpg" class="img-fluid rounded" alt="">
-                            <div class="team-content">
-                                <ul class="list-inline mb-0 p-0">
-                                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-facebook"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <a href="#" class="text-primary">
-                                <h5 class="fs-18 mb-1">Juliana Waddell</h5>
-                            </a>
-                            <p class="mb-0">CEO & Founder</p>
-                        </div>
-                    </div>
-                    <!--end team-box-->
-                </div>
-                <!-- END COL -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-box text-center">
-                        <div class="team-img position-relative">
-                            <img src="images/users/img-1.jpg" class="img-fluid rounded" alt="">
-                            <div class="team-content">
-                                <ul class="list-inline mb-0 p-0">
-                                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-facebook"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <a href="#" class="text-primary">
-                                <h5 class="fs-18 mb-1">Tyler Raymer</h5>
-                            </a>
-                            <p class="mb-0">Project Manager</p>
-                        </div>
-                    </div>
-                    <!--end team-box-->
-                </div>
-                <!-- END COL -->
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-box text-center">
-                        <div class="team-img position-relative">
-                            <img src="images/users/img-3.jpg" class="img-fluid rounded" alt="">
-                            <div class="team-content">
-                                <ul class="list-inline mb-0 p-0">
-                                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-facebook"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="p-3">
-                            <a href="#" class="text-primary">
-                                <h5 class="fs-18 mb-1">Chris Lewis</h5>
-                            </a>
-                            <p class="mb-0">UI/UX Designer</p>
-                        </div>
-                    </div>
-                    <!--end team-box-->
-                </div>
-                <!-- END COL -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-box text-center">
-                        <div class="team-img position-relative">
-                            <img src="images/users/img-4.jpg" class="img-fluid rounded" alt="">
-                            <div class="team-content">
-                                <ul class="list-inline mb-0 p-0">
-                                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-facebook"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="mdi mdi-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="p-3">
-                            <a href="#" class="text-primary">
-                                <h5 class="fs-18 mb-1">Juliana Waddell</h5>
-                            </a>
-                            <p class="mb-0">Web Developer</p>
-                        </div>
-                    </div>
-                    <!--end team-box-->
-                </div>
-                <!-- END COL -->
-            </div>
-            <!--end row-->
-        </div>
-        <!--end container-->
-    </section>
-    <!-- END TEAM -->
-
-      <!--start portfolio-->
-      <section class="section" id="portfolio">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="header-title text-center">
-                        <p class="text-uppercase text-muted mb-2">Portfolio</p>
-                        <h3>Our Works</h3>
-                        <div class="title-border mt-3"></div>
-                        <p class="title-desc text-muted mt-3">We craft digital, graphic and dimensional thinking, to
-                            create category leading brand experiences that have meaning and add a value.</p>
-                    </div>
-                </div>
-                <!--end col-->
-            </div>
-            <!--end row-->
-
-            <div class="row my-4 pt-2">
-                <div class="col-lg-12">
-                    <div class="filters-group">
-                        <ul class="nav filter-options list-unstyled list-inline justify-content-center">
-                            <li data-group="all" class="active nav-link list-inline-item mt-2">
-                                All</li>
-                            <li data-group="project" class="nav-link list-inline-item mt-2">
-                                Project</li>
-                            <li data-group="design" class="nav-link list-inline-item mt-2">
-                                Design</li>
-                            <li data-group="photography" class="nav-link list-inline-item mt-2">
-                                Photography</li>
-                            <li data-group="development" class="nav-link list-inline-item mt-2">
-                                Development</li>
-                        </ul>
-                        <!--end portfolio-list-->
-                    </div>
-                </div><!--end col-->
-            </div><!--end row-->
-        </div><!--end container-->
-
-        <div class="container-fluid mt-5">
-            <div class="row g-2" id="grid">
-                <div class="col-lg-3 col-md-6  picture-item" data-groups='["photography","development"]'>
-                    <div class="portfolio-box rounded">
-                        <img class="img-fluid" src="images/portfolio/img-1.jpg" alt="work-img" />
-                        <div class="portfolio-content">
-                            <div class="img-view">
-                                <a href="images/portfolio/img-1.jpg" class="text-muted image-popup"><i
-                                        class="mdi mdi-plus"></i></a>
-                            </div>
-                            <div class="portfolio-caption">
-                                <a href="#" class="text-primary">
-                                    <h5 class="mb-1 fs-18">Motion Graphic</h5>
-                                </a>
-                                <p class="mb-0">Photography, Development</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end portfolio-box-->     
-                </div>
-                <!--end col-->
-                <div class="col-lg-3 col-md-6  picture-item" data-groups='["photography"]'>
-                    <div class="portfolio-box rounded">
-                        <img class="img-fluid" src="images/portfolio/img-2.jpg" alt="work-img" />
-                        <div class="portfolio-content">
-                            <div class="img-view">
-                                <a href="images/portfolio/img-2.jpg" class="text-muted image-popup"><i
-                                        class="mdi mdi-plus"></i></a>
-                            </div>
-                            <div class="portfolio-caption">
-                                <a href="#" class="text-primary">
-                                    <h5 class="mb-1 fs-18">Creative Flyer</h5>
-                                </a>
-                                <p class="mb-0">Photography</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end portfolio-box-->
-                </div>
-                <!--end col-->
-                <div class="col-lg-3 col-md-6  picture-item" data-groups='["development"]'>
-                    <div class="portfolio-box rounded">
-                        <img class="img-fluid" src="images/portfolio/img-3.jpg" alt="work-img" />
-                        <div class="portfolio-content">
-                            <div class="img-view">
-                                <a href="images/portfolio/img-3.jpg" class="text-muted image-popup"><i
-                                        class="mdi mdi-plus"></i></a>
-                            </div>
-                            <div class="portfolio-caption">
-                                <a href="#" class="text-primary">
-                                    <h5 class="mb-1 fs-18">Stories Collective</h5>
-                                </a>
-                                <p class="mb-0">Development</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end portfolio-box-->
-                </div>
-                <!--end col-->
-                <div class="col-lg-3 col-md-6  picture-item" data-groups='["project", "design"]'>
-                    <div class="portfolio-box rounded">
-                        <img class="img-fluid" src="images/portfolio/img-4.jpg" alt="work-img" />
-                        <div class="portfolio-content">
-                            <div class="img-view">
-                                <a href="images/portfolio/img-4.jpg" class="text-muted image-popup"><i
-                                        class="mdi mdi-plus"></i></a>
-                            </div>
-                            <div class="portfolio-caption">
-                                <a href="#" class="text-primary">
-                                    <h5 class="mb-1 fs-18">Lightning Shot</h5>
-                                </a>
-                                <p class="mb-0">Project, Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end portfolio-box-->
-                </div>
-                <!--end col-->
-                <div class="col-lg-3 col-md-6  picture-item" data-groups='["development","project","design"]'>
-                    <div class="portfolio-box rounded">
-                        <img class="img-fluid" src="images/portfolio/img-5.jpg" alt="work-img" />
-                        <div class="portfolio-content">
-                            <div class="img-view">
-                                <a href="images/portfolio/img-5.jpg" class="text-muted image-popup"><i
-                                        class="mdi mdi-plus"></i></a>
-                            </div>
-                            <div class="portfolio-caption">
-                                <a href="#" class="text-primary">
-                                    <h5 class="mb-1 fs-18">Mockup Collection</h5>
-                                </a>
-                                <p class="mb-0">Development, Project, Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end portfolio-box-->
-                </div>
-                <!--end col-->
-                <div class="col-lg-3 col-md-6  picture-item" data-groups='["photography"]'>
-                    <div class="portfolio-box rounded">
-                        <img class="img-fluid" src="images/portfolio/img-6.jpg" alt="work-img" />
-                        <div class="portfolio-content">
-                            <div class="img-view">
-                                <a href="images/portfolio/img-6.jpg" class="text-muted image-popup"><i
-                                        class="mdi mdi-plus"></i></a>
-                            </div>
-                            <div class="portfolio-caption">
-                                <a href="#" class="text-primary">
-                                    <h5 class="mb-1 fs-18">Company V-card</h5>
-                                </a>
-                                <p class="mb-0">Photography</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end portfolio-box-->
-                </div>
-                <!--end col-->
-                <div class="col-lg-3 col-md-6  picture-item" data-groups='["development","design"]'>
-                    <div class="portfolio-box rounded">
-                        <img class="img-fluid" src="images/portfolio/img-7.jpg" alt="work-img" />
-                        <div class="portfolio-content">
-                            <div class="img-view">
-                                <a href="images/portfolio/img-6.jpg" class="text-muted image-popup"><i
-                                        class="mdi mdi-plus"></i></a>
-                            </div>
-                            <div class="portfolio-caption">
-                                <a href="#" class="text-primary">
-                                    <h5 class="mb-1 fs-18">Mockup box with paints</h5>
-                                </a>
-                                <p class="mb-0">Development, Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end portfolio-box-->
-                </div>
-                <!--end col-->
-                <div class="col-lg-3 col-md-6  picture-item" data-groups='["photography"]'>
-                    <div class="portfolio-box rounded">
-                        <img class="img-fluid" src="images/portfolio/img-8.jpg" alt="work-img" />
-                        <div class="portfolio-content">
-                            <div class="img-view">
-                                <a href="images/portfolio/img-6.jpg" class="text-muted image-popup"><i
-                                        class="mdi mdi-plus"></i></a>
-                            </div>
-                            <div class="portfolio-caption">
-                                <a href="#" class="text-primary">
-                                    <h5 class="mb-1 fs-18">Pen and article</h5>
-                                </a>
-                                <p class="mb-0">Photography</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end portfolio-box-->
-                </div>
-                <!--end col-->
-            </div><!--end row-->
-        </div><!--end container-fluid-->
-    </section>
-    <!--end portfolio--> 
-
-
-
-    <!-- START PRICING -->
-    <section class="section bg-light" id="pricing">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="header-title text-center mb-4">
-                        <p class="text-uppercase text-muted mb-2">Offers</p>
-                        <h3>Choose Your Best Plan</h3>
-                        <div class="title-border mt-3"></div>
-                        <p class="title-desc text-muted mt-3">We craft digital, graphic and dimensional thinking, to
-                            create category leading brand experiences that have meaning and add a value.</p>
-                    </div>
-                </div><!--end col-->
-            </div>
-            <!--end row-->
-
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-box bg-white box-shadow text-center p-5 mt-5 rounded">
-                        <p class="price-title mb-4 pb-3">Classic</p>
-                        <h1 class="mb-0 price">$34.99</h1>
-                        <div class="pricing-features mt-4 pt-4">
-                            <p>Customizad Plans</p>
-                            <p>Billing Report</p>
-                            <p>Access to Asana</p>
-                        </div>
-                        <div class="mt-5">
-                            <a href="#" class="btn btn-primary w-100">Purchase Now</a>
-                        </div>
-                    </div><!--end pricing-box-->
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-box bg-white box-shadow text-center p-5 mt-5 rounded">
-                        <div class="pricing-label">
-                            <h5 class="text-white fs-16">Sale</h5>
-                        </div>
-
-                        <p class="price-title mb-4 pb-3">Popular</p>
-                        <h1 class="mb-0 price">$49.99</h1>
-                        <div class="pricing-features mt-4 pt-4">
-                            <p>Customizad Plans</p>
-                            <p>Billing Report</p>
-                            <p>Access to Asana</p>
-                            <p>Unlimited themes</p>
-                        </div>
-                        <div class="mt-5">
-                            <a href="#" class="btn btn-primary w-100">Purchase Now</a>
-                        </div>
-                    </div>
-                    <!--end pricing-box-->
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-box bg-white box-shadow text-center p-5 mt-5 rounded">
-                        <p class="price-title mb-4 pb-3">Ultimate</p>
-                        <h1 class="mb-0 price">$89.99</h1>
-                        <div class="pricing-features mt-4 pt-4">
-                            <p>Customizad Plans</p>
-                            <p>Billing Report</p>
-                            <p>Access to Asana</p>
-                        </div>
-                        <div class="mt-5">
-                            <a href="#" class="btn btn-primary w-100">Purchase Now</a>
-                        </div>
-                    </div>
-                    <!--end pricing-box-->
-                </div>
-                <!--end col-->
-            </div>
-            <!--end row-->
-        </div>
-        <!--end container-->
-    </section>
-    <!-- END PRICING -->
 
     <!-- START BLOG -->
     <section class="section" id="blog">
@@ -1147,72 +551,6 @@
                 </div><!--end col-->
 
             </div><!--end row-->
-
-            <div class="row mt-5 pt-2 justify-content-center">
-
-                <div class="col-lg-9">
-                    <div class="custom-form">
-                        <form method="post" name="myForm" onsubmit="return validateForm()">
-                            <p id="error-msg"></p>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="mb-3">
-                                        <label for="name" class="form-label">Name* :</label>
-                                        <input name="name" id="name" type="text" class="form-control"
-                                            placeholder="Enter your name">
-                                    </div>
-                                </div><!--end col-->
-                            </div>
-                            <!-- end row -->
-
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label">Email address* :</label>
-                                        <input type="email" class="form-control" name="email" id="email"
-                                            placeholder="Enter your email">
-                                    </div>
-                                </div>
-                                <!-- end col -->
-
-                                <div class="col-lg-6">
-                                    <div class="mb-3">
-                                        <label for="number" class="form-label">Phone number* :</label>
-                                        <input type="tel" class="form-control" name="number" id="number"
-                                            placeholder="Enter your number">
-                                    </div>
-                                </div>
-                                <!-- end col -->
-
-                                <div class="col-lg-12">
-                                    <div class="mb-3">
-                                        <label for="comments" class="form-label">Comments :</label>
-                                        <textarea class="form-control" placeholder="Leave a comment here"
-                                            name="comments" id="comments" style="height: 100px"></textarea>
-                                    </div>
-                                </div>
-                                <!-- end col -->
-
-                            </div>
-                            <!-- end row -->
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="mt-3 text-end">
-                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary"
-                                            value="Send Message">
-                                        <div id="simple-msg"></div>
-                                    </div>
-                                </div>
-                                <!-- end col -->
-                            </div>
-                            <!-- end row -->
-                        </form>
-                        <!-- end form -->
-                    </div>
-                </div>
-                <!-- end col -->
-            </div>
             <!--end row-->
         </div>
         <!--end container-->
