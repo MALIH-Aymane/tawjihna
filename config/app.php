@@ -118,10 +118,16 @@ return [
     | Supported drivers: "file", "cache"
     |
     */
+    'role' => \App\Http\Middleware\RoleMiddleware::class,
 
     'maintenance' => [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
+    ],
+
+    'aliases' => [
+        // Other aliases...
+        'Helper' => App\Helpers\Helpers::class,
     ],
 
 ];

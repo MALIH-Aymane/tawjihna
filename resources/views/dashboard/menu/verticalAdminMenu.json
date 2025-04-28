@@ -1,0 +1,53 @@
+{
+    "menu": [
+        {
+            "url": "/",
+            "name": "Home",
+            "icon": "menu-icon tf-icons ti ti-smart-home",
+            "slug": "pages-home"
+        },
+        {
+            "url": "page-2",
+            "icon": "menu-icon tf-icons ti ti-file",
+            "name": "Page 2",
+            "slug": "pages-page-2"
+        },
+        {
+            "name": "Blog",
+            "icon": "menu-icon tf-icons ti ti-notebook",
+            "slug": "pages-misc-error",
+            "submenu": [
+                {
+                    "url": "admin/blogs",
+                    "name": "Blogs Management",
+                    "icon": "menu-icon tf-icons ti ti-notebook",
+                    "slug": "pages-misc-error"
+                },
+                {
+                    "url": "admin/categories",
+                    "name": "Category Management",
+                    "icon": "menu-icon tf-icons ti ti-category-2",
+                    "slug": "pages-misc-error"
+                }
+            ]
+        },{
+            "name": "Options",
+            "icon": "menu-icon tf-icons ti ti-notebook",
+            "slug": "pages-misc-error",
+            "submenu": [
+                {
+                    "url": "admin/bac-types",
+                    "name": "Bac types management",
+                    "icon": "menu-icon tf-icons ti ti-notebook",
+                    "slug": "pages-misc-error"
+                },
+                {
+                    "url": "admin/categories",
+                    "name": "Category Management",
+                    "icon": "menu-icon tf-icons ti ti-category-2",
+                    "slug": "pages-misc-error"
+                }
+            ]
+        }
+    ]
+}
