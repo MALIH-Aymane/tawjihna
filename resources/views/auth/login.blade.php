@@ -24,8 +24,7 @@
                         <!-- Logo -->
                         <div class="app-brand justify-content-center mb-6">
                             <a href="{{url('/')}}" class="app-brand-link">
-                                <span class="app-brand-logo demo">@include('dashboard._partials.macros',['height'=>20,'withbg' => "fill: #fff;"])</span>
-                                <span class="app-brand-text demo text-heading fw-bold">{{ config('variables.templateName') }}</span>
+                                <span class="app-brand-logo-auth demo"><img src="{{asset('dark-tawjihna.svg')}}" alt="logo" /></span>
                             </a>
                         </div>
                         <!-- /Logo -->
@@ -70,27 +69,27 @@
                             </a>
                         </p>
 
-                        <div class="divider my-6">
-                            <div class="divider-text">or</div>
-                        </div>
+{{--                        <div class="divider my-6">--}}
+{{--                            <div class="divider-text">or</div>--}}
+{{--                        </div>--}}
 
-                        <div class="d-flex justify-content-center">
-                            <a href="javascript:;" class="btn btn-sm btn-icon rounded-pill btn-text-facebook me-1_5">
-                                <i class="tf-icons ti ti-brand-facebook-filled"></i>
-                            </a>
+{{--                        <div class="d-flex justify-content-center">--}}
+{{--                            <a href="javascript:;" class="btn btn-sm btn-icon rounded-pill btn-text-facebook me-1_5">--}}
+{{--                                <i class="tf-icons ti ti-brand-facebook-filled"></i>--}}
+{{--                            </a>--}}
 
-                            <a href="javascript:;" class="btn btn-sm btn-icon rounded-pill btn-text-twitter me-1_5">
-                                <i class="tf-icons ti ti-brand-twitter-filled"></i>
-                            </a>
+{{--                            <a href="javascript:;" class="btn btn-sm btn-icon rounded-pill btn-text-twitter me-1_5">--}}
+{{--                                <i class="tf-icons ti ti-brand-twitter-filled"></i>--}}
+{{--                            </a>--}}
 
-                            <a href="javascript:;" class="btn btn-sm btn-icon rounded-pill btn-text-github me-1_5">
-                                <i class="tf-icons ti ti-brand-github-filled"></i>
-                            </a>
+{{--                            <a href="javascript:;" class="btn btn-sm btn-icon rounded-pill btn-text-github me-1_5">--}}
+{{--                                <i class="tf-icons ti ti-brand-github-filled"></i>--}}
+{{--                            </a>--}}
 
-                            <a href="javascript:;" class="btn btn-sm btn-icon rounded-pill btn-text-google-plus">
-                                <i class="tf-icons ti ti-brand-google-filled"></i>
-                            </a>
-                        </div>
+{{--                            <a href="javascript:;" class="btn btn-sm btn-icon rounded-pill btn-text-google-plus">--}}
+{{--                                <i class="tf-icons ti ti-brand-google-filled"></i>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
                 <!-- /Register -->

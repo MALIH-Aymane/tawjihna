@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\language\LanguageController;
 use App\Http\Controllers\pages\HomePage;
+use \App\Http\Controllers\LandingController;
 use App\Http\Controllers\pages\Page2;
 use App\Http\Controllers\pages\MiscError;
 
@@ -11,10 +12,9 @@ use App\Http\Controllers\admin\BlogController;
 use App\Http\Controllers\admin\CategoryController;
 use \App\Http\Controllers\admin\BacTypeController;
 
+// Landing page :
+Route::get('/', [LandingController::class, 'index'])->name('landing-page');
 
-Route::get('/', function () {
-    return view('landing.index');
-});
 
 // Main Page Route
 Route::get('/home', [HomePage::class, 'index'])->name('pages-home');

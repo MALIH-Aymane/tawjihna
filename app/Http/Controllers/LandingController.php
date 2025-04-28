@@ -2,13 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BlogPost;
 use Illuminate\Http\Request;
+
 
 class LandingController extends Controller
 {
     public function index()
     {
-        return view('landing');
+        $latestPosts = BlogPost::latest()->take(3)->get();
+
+        return view('landing.index', [
+            'latestPosts' => $latestPosts,
+        ]);
     }
 
     public function registerNotification(Request $request)

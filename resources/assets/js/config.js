@@ -10,7 +10,7 @@
 // JS global variables
 window.config = {
   colors: {
-    primary: '#7367f0',
+    primary: '#ffdc58',
     secondary: '#808390',
     success: '#28c76f',
     info: '#00bad1',

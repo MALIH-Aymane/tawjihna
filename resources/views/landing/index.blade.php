@@ -1,7 +1,11 @@
+@php
+use \Illuminate\Support\Str;
+@endphp
 @extends('layouts.app')
 
 
 @section('content')
+
 
        <!-- Pre-loader -->
        <div id="preloader">
@@ -15,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top sticky" id="navbar">
         <div class="container">
             <!-- LOGO -->
-            <a class="navbar-brand logo text-uppercase" href="index-5.html">
+            <a class="navbar-brand logo text-uppercase" href="/">
                 <img src="{{ asset('light-tawjihna.svg') }}" class="logo-light" alt="logo-light" height="35">
                 <img src="{{ asset('light-tawjihna.svg') }}" class="logo-dark" alt="logo-dark" height="34">
             </a>
@@ -182,7 +186,7 @@
                         <p class="text-uppercase text-muted mb-2">Packs</p>
                         <h3>Khtar Pack li mnasbek</h3>
                         <div class="title-border mt-3"></div>
-                        <p class="title-desc text-muted mt-3">Choisissez parmi différents packs d'inscription pour simplifier votre processus. 
+                        <p class="title-desc text-muted mt-3">Choisissez parmi différents packs d'inscription pour simplifier votre processus.
                             Paiement en ligne sécurisé et rapide..</p>
                     </div>
                 </div><!--end col-->
@@ -351,109 +355,39 @@
 
     <!-- START BLOG -->
     <section class="section" id="blog">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="header-title text-center mb-5">
-                        <p class="text-uppercase text-muted mb-2">News</p>
-                        <h3>Latest Articles And News</h3>
-                        <div class="title-border mt-3"></div>
-                        <p class="title-desc text-muted mt-3">We craft digital, graphic and dimensional thinking, to
-                            create category leading brand experiences that have meaning and add a value.</p>
+
+        <div class="container py-5">
+            <h2 class="text-center mb-5 fw-bold">Our Latest Blog Posts</h2>
+
+            <div class="row g-4">
+                @foreach ($latestPosts as $post)
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0 hover-shadow">
+                            @if($post->featured_image)
+                                <img src="{{ asset('storage/' . $post->featured_image) }}" class="card-img-top img-fluid rounded-top" alt="{{ $post->title }}">
+                            @else
+                                <img src="https://via.placeholder.com/600x400?text=Blog+Image" class="card-img-top img-fluid rounded-top" alt="Blog Image">
+                            @endif
+
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-3 text-primary">{{ Str::limit($post->title, 50) }}</h5>
+                                <p class="card-text text-muted small">{{ Str::limit(strip_tags($post->content), 100) }}</p>
+                                <div class="mt-auto">
+                                    <a href="" class="btn btn-outline-primary w-100">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-footer bg-white border-0 text-muted small">
+                                Published on {{ $post->created_at->format('M d, Y') }}
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!--end col-->
+                @endforeach
             </div>
-            <!--end row-->
-
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="blog-box box-shadow rounded mt-4 p-3">
-                        <div class="blog-img">
-                            <img src="images/blog/img-1.jpg" class="img-fluid rounded" alt="">
-                            <div class="read-more">
-                                <a href="#"><i class="mdi mdi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#" class="primary-link">
-                                <h5 class="fs-19 mb-1">How to be appreciated for your hard work as a developer</h5>
-                            </a>
-                            <p class="text-muted mt-2">The final text is not yet available. Dummy texts have Internet
-                                tend been in use by typesetters since the 16th century.</p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/users/img-5.jpg" alt="" height="45" class="rounded-circle me-2">
-                                    <p class="text-muted mb-0">admin</p>
-                                </div>
-                                <p class="mb-0 float-end text-muted"><i
-                                        class="mdi mdi-clock-time-four-outline align-middle me-1 text-primary"></i> 24
-                                    min</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end blog-->
-                </div><!-- end col -->
-
-                <div class="col-lg-4">
-                    <div class="blog-box box-shadow rounded mt-4 p-3">
-                        <div class="blog-img">
-                            <img src="images/blog/img-2.jpg" class="img-fluid rounded" alt="">
-                            <div class="read-more">
-                                <a href="#"><i class="mdi mdi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#" class="primary-link">
-                                <h5 class="fs-19 mb-1">Developers watch out for these burnout symptoms</h5>
-                            </a>
-                            <p class="text-muted mt-2">Allegedly, a Latin scholar established the origin of the
-                                established text Internet by compiling unusual word.</p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/users/img-6.jpg" alt="" height="45" class="rounded-circle me-2">
-                                    <p class="text-muted mb-0">admin</p>
-                                </div>
-                                <p class="mb-0 float-end text-muted"><i
-                                        class="mdi mdi-clock-time-four-outline align-middle me-1 text-primary"></i> 32
-                                    min</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end blog-->
-                </div><!-- end col -->
-
-                <div class="col-lg-4">
-                    <div class="blog-box box-shadow rounded mt-4 p-3">
-                        <div class="blog-img">
-                            <img src="images/blog/img-3.jpg" class="img-fluid rounded" alt="Blog">
-                            <div class="read-more">
-                                <a href="#"><i class="mdi mdi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="mt-4">
-                            <a href="#" class="primary-link">
-                                <h5 class="fs-19 mb-1">How designers and developers can collaborate better</h5>
-                            </a>
-                            <p class="text-muted mt-2">It seems that only fragments of the original text remain in only
-                                fragments the Lorem Ipsum texts used today.</p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <img src="images/users/img-7.jpg" alt="" height="45" class="rounded-circle me-2">
-                                    <p class="text-muted mb-0">admin</p>
-                                </div>
-                                <p class="mb-0 float-end text-muted"><i
-                                        class="mdi mdi-clock-time-four-outline align-middle me-1 text-primary"></i> 45
-                                    min</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end blog-->
-                </div><!-- end col -->
-            </div>
-            <!--end row-->
         </div>
-        <!--end container-->
+
     </section>
     <!-- END BLOG -->
 
@@ -531,7 +465,7 @@
                         <div class="mt-4 pt-2">
                             <h6 class="fs-17">Contact</h6>
                             <p class="text-muted mb-0"> www.exampledesign.com</p>
-                            <p class="text-muted mb-0"> example@design.com</p>                           
+                            <p class="text-muted mb-0"> example@design.com</p>
                         </div>
                     </div>
                 </div><!--end col-->
@@ -545,7 +479,7 @@
                             <h6 class="fs-17">Working Hours</h6>
                         <p class="text-muted mb-0"> Monday-friday: 9:00- 06:00</p>
                             <p class="text-muted mb-0"> Saturday-Sunday: Holiday</p>
-                            
+
                         </div>
                     </div>
                 </div><!--end col-->
@@ -564,7 +498,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="mt-4">
-                        <a href="index-1.html"><img src="{{ asset('dark-tawjihna.svg') }}" alt="" height="35"></a>
+                        <a href="/"><img src="{{ asset('dark-tawjihna.svg') }}" alt="" height="35"></a>
                         <p class="text-white-50 mt-3 pt-2 mb-0 ">It is a long established fact that a reader will be of
                             a page reader will be of at its layout.</p>
                         <div class="mt-4">
