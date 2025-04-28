@@ -30,20 +30,24 @@
                     "slug": "pages-misc-error"
                 }
             ]
-        },
-        {
-            "url": "auth/login-basic",
-            "name": "Login",
-            "icon": "menu-icon tf-icons ti ti-login",
-            "slug": "auth-login-basic",
-            "target": "_blank"
-        },
-        {
-            "url": "auth/register-basic",
-            "name": "Register",
-            "icon": "menu-icon tf-icons ti ti-user",
-            "slug": "auth-register-basic",
-            "target": "_blank"
+        },{
+            "name": "Options",
+            "icon": "menu-icon tf-icons ti ti-notebook",
+            "slug": "pages-misc-error",
+            "submenu": [
+                {
+                    "url": "admin/bac-types",
+                    "name": "Bac types management",
+                    "icon": "menu-icon tf-icons ti ti-notebook",
+                    "slug": "pages-misc-error"
+                },
+                {
+                    "url": "admin/categories",
+                    "name": "Category Management",
+                    "icon": "menu-icon tf-icons ti ti-category-2",
+                    "slug": "pages-misc-error"
+                }
+            ]
         }
     ]
 }

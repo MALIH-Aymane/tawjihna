@@ -78,14 +78,14 @@
                                         </a>
                                     </li>
                                     <li>
-{{--                                        <form action="{{ route('admin.blogs.destroy', $blog->id) }}" method="POST"--}}
-{{--                                              onsubmit="return confirm('Confirmer la suppression ?');">--}}
-{{--                                            @csrf--}}
-{{--                                            @method('DELETE')--}}
-{{--                                            <button class="dropdown-item text-danger" type="submit">--}}
-{{--                                                <i class="ti ti-trash me-1"></i> Supprimer--}}
-{{--                                            </button>--}}
-{{--                                        </form>--}}
+                                        <form action="{{ route('admin.blog.destroy', $blog->id) }}" method="POST"
+                                              onsubmit="return confirm('Confirmer la suppression ?');">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="dropdown-item text-danger" type="submit">
+                                                <i class="ti ti-trash me-1"></i> Supprimer
+                                            </button>
+                                        </form>
                                     </li>
                                 </ul>
                             </div>
