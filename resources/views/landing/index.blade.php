@@ -97,7 +97,8 @@
             </div>
         </div>
         <!--end container-->
-    </section><!-- END HOME -->
+    </section>
+    <!-- END HOME -->
     <!-- START SHAPE -->
     <div class="position-relative">
         <div class="shape">
@@ -134,32 +135,33 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box text-center mt-4">
-                        <img src="images/feature/img-01.png" alt="" class="img-fluid">
-                        <h5 class="fs-18 mt-4">Web design</h5>
+                        <img src="{{ asset('images/landing/Notification.png') }}" alt="Notification"  width="100" height="80" class="img-fluid">
+                        <h5 class="fs-18 mt-4">Bqa 3la Qers!</h5>
                         <div class="lighlight-border mt-3"></div>
-                        <p class="text-muted mt-3">Those who do not know how to pursue pleasure rationally encounter
-                            consequences that are extremely painful.</p>
+                        <p class="text-muted mt-3">Matflet ta chi concours, bourse,  Reçois des rappels perso 
+                        sur WhatsApp w b9a toujours au courant des opportunités li kaynin..</p>
                     </div>
                 </div>
                 <!--end col-->
 
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box text-center mt-4 box-shadow">
-                        <img src="images/feature/img-02.png" alt="" class="img-fluid">
-                        <h5 class="fs-18 mt-4">Development</h5>
+                        <img src="{{ asset('images/landing/Task.png') }}" alt="Notification" width="100" height="80" class="img-fluid">
+                        <h5 class="fs-18 mt-4">Nsajlok?</h5>
                         <div class="lighlight-border mt-3"></div>
-                        <p class="text-muted mt-3 mb-0">Due to its widespread use as filler text for layouts,
-                            non-readability is of great importance.</p>
+                        <p class="text-muted mt-3 mb-0">Facilite l’inscription dyalek grâce a l’expertise li 3andna, 
+                        Nta bqa ghi hani w mrekz M3a preparation dyalk.</p>
                     </div>
                 </div>
                 <!--end col-->
 
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box text-center mt-4">
-                        <img src="images/feature/img-03.png" alt="" class="img-fluid">
-                        <h5 class="fs-18 mt-4">Branding</h5>
+                        <img src="{{ asset('images/landing/University.png') }}" alt="Notification" width="200" height="150" class="img-fluid">
+                        <h5 class="fs-18 mt-4">Découverte des Écoles</h5>
                         <div class="lighlight-border mt-3"></div>
-                        <p class="text-muted mt-3 mb-0">There are many variations of passages of available, but the majority alteration in some form.</p>
+                        <p class="text-muted mt-3 mb-0">Trouvez les meilleures écoles qui correspondent à vos 
+                        compétences et intérêts grâce à nos fonctionnalités de recherche.</p>
                     </div>
                 </div>
                 <!--end col-->
@@ -370,7 +372,7 @@
                 <div class="col-lg-4">
                     <div class="blog-box box-shadow rounded mt-4 p-3">
                         <div class="blog-img">
-                            <img src="images/blog/img-1.jpg" class="img-fluid rounded" alt="">
+                            <img src="{{ asset('images/landing/hero.png') }}" alt="Notification" width="100" height="80" class="img-fluid">
                             <div class="read-more">
                                 <a href="#"><i class="mdi mdi-arrow-right"></i></a>
                             </div>
@@ -457,28 +459,6 @@
     </section>
     <!-- END BLOG -->
 
-    <!-- START CTA -->
-    <section class="bg-cta">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="header-title text-center">
-                        <h2>Become a part of zoric bussiness community today</h2>
-                        <p class="title-desc text-muted mt-3"> Start working with zoric that can provide everything you
-                            need to generate awareness, drive traffic, connect. </p>
-                        <div class="mt-4">
-                            <a href="#" class="btn btn-primary mt-2">Get Started</a>
-                        </div>
-                    </div>
-
-                </div>
-                <!--end col-->
-            </div>
-            <!--end row-->
-        </div>
-        <!--end container-->
-    </section>
-    <!-- END CTA -->
 
     <!-- START CONTACT -->
     <section class="section" id="contact">
